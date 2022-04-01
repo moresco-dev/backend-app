@@ -1,0 +1,27 @@
+@api= http://192.168.10.251:3000/tasks
+
+GET {{api}}
+###
+GET {{api}}/1
+###
+GET {{api}}/count
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title":"deleted task",
+    "description":"new task to delete"
+}
+###
+DELETE {{api}}/22
+###
+PUT {{api}}/21
+Content-Type: application/json
+
+{
+    "title":"updated successfully",
+    "description":"task updated successfully"
+}
+
+
